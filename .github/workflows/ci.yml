@@ -21,18 +21,8 @@ jobs:
           key: ${{ runner.os }}-yarn2-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-yarn2-
-      - run: yarn install
-        env:
-          CI: true
+      - run: yarn install --immutable
       - run: yarn build
-        env:
-          CI: true
       - run: yarn lint
-        env:
-          CI: true
       - run: yarn test:coverage
-        env:
-          CI: true
       - run: yarn docs
-        env:
-          CI: true
