@@ -63,7 +63,7 @@
     "test:coverage": "tsdx test --passWithNoTests --coverage",
     "lint": "npm run eslint && npm run prettier",
     "fix": "npm run eslint:fix && npm run prettier:write",
-    "prettier:impl": "prettier \"*.{md,json,js}\" \"src/**\"",
+    "prettier:impl": "prettier \"*.{md,json,js,yml}\" \"{.github,src,samples}/**\"",
     "prettier:write": "npm run prettier:impl -- --write",
     "prettier": "npm run prettier:impl -- --check",
     "eslint": "tsdx lint src --ext .ts,.tsx",

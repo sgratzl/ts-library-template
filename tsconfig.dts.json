@@ -3,6 +3,6 @@
   "compilerOptions": {
     "outDir": "./.tmp",
     "declaration": true,
-    "emitDeclarationOnly": true,
+    "emitDeclarationOnly": true
   }
 }
