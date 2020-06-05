@@ -19,6 +19,7 @@
   "module": "dist/tslibrary.esm.js",
   "main": "dist/tslibrary.umd.development.js",
   "unpkg": "dist/tslibrary.umd.production.min.js",
+  "jsdelivr": "dist/tslibrary.umd.production.min.js",
   "types": "dist/index.d.ts",
   "sideEffects": false,
   "files": [
