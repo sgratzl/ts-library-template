@@ -70,7 +70,7 @@
     "eslint": "tsdx lint src --ext .ts,.tsx",
     "eslint:fix": "npm run eslint -- --fix",
     "docs": "typedoc",
-    "prepare": "tsdx build",
+    "prepare": "npm run build",
     "release": "release-it --disable-metrics --npm.skipChecks",
     "release:pre": "release-it --disable-metrics --npm.skipChecks --preRelease=alpha --npm.tag=next"
   }
