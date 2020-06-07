@@ -13,8 +13,9 @@ module.exports = {
 
     // TODO list UMD names of dependencies
     // config.output.globals[''] = '';
+    const originalExternal = config.external;
     const external = Object.keys(pkg.dependencies || {}).concat(Object.keys(pkg.peerDependencies || {}));
-    config.external = (v) => external.includes(v) || base(v);
+    config.external = (v) => (originalExternal(v) ? external.includes(v) : false);
 
     const c = config.plugins.findIndex((d) => d.name === 'commonjs');
     if (c !== -1) {
