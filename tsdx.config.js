@@ -1,15 +1,20 @@
 const commonjs = require('@rollup/plugin-commonjs');
 const resolve = require('rollup-plugin-pnp-resolve');
 const cleanup = require('rollup-plugin-cleanup');
+const fs = require('fs');
+
+const pkg = JSON.parse(fs.readFileSync('./package.json'));
 
 module.exports = {
   rollup(config, options) {
     // if (options.format === 'umd') {
-    //   config.input = './src/index.ts';
+    //   config.input = './src/bundle.ts';
     // }
 
+    // TODO list UMD names of dependencies
     // config.output.globals[''] = '';
-    // const base = config.external;
+    const external = Object.keys(pkg.dependencies || {}).concat(Object.keys(pkg.peerDependencies || {}));
+    config.external = (v) => external.includes(v) || base(v);
 
     const c = config.plugins.findIndex((d) => d.name === 'commonjs');
     if (c !== -1) {
