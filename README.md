@@ -41,6 +41,6 @@ yarn release:pre
 
 [npm-image]: https://badge.fury.io/js/ts-library-template.svg
 [npm-url]: https://npmjs.org/package/sgratzl/ts-library-template
-[github-actions-image]: https://github.com/sgratzl/ts-library-template/workflows/nodeci/badge.svg
+[github-actions-image]: https://github.com/sgratzl/ts-library-template/workflows/ci/badge.svg
 [github-actions-url]: https://github.com/sgratzl/ts-library-template/actions
 [codepen]: https://img.shields.io/badge/CodePen-open-blue?logo=codepen
