@@ -62,12 +62,12 @@
     "typescript": "^3.9.3"
   },
   "scripts": {
-    "clean": "rimraf dist .tmp node_modules",
+    "clean": "rimraf dist node_modules",
     "compile": "tsc -p tsconfig.json --noEmit",
     "start": "npm run watch",
     "watch": "tsdx watch --noClean --name TSLibrary --format esm,umd",
-    "build": "npm run clean && tsdx build --name TSLibrary --format esm,umd && npm run typings",
-    "typings": "tsc -p tsconfig.dts.json && rollup -c rollup.dts.config.js",
+    "build": "tsdx build --name TSLibrary --format esm,umd && npm run typings",
+    "typings": "rollup -c rollup.dts.config.js",
     "test": "tsdx test --passWithNoTests",
     "test:watch": "tsdx test --passWithNoTests --watch",
     "test:coverage": "tsdx test --passWithNoTests --coverage",
