@@ -12,6 +12,8 @@ npm install --save ts-library-template
 
 ## Usage
 
+TODO
+
 see [Samples](https://github.com/sgratzl/ts-library-template/tree/master/samples) on Github
 
 or at this [![Open in CodePen][codepen]](https://codepen.io/sgratzl/pen/TODO)
@@ -29,6 +31,7 @@ yarn pnpify --sdk vscode
 ### Common commands
 
 ```sh
+yarn clean
 yarn compile
 yarn test
 yarn lint

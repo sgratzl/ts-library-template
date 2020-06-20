@@ -2,6 +2,9 @@
   "name": "ts-library-template",
   "description": "TODO",
   "version": "1.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "author": {
     "name": "Samuel Gratzl",
     "email": "sam@sgratzl.com",
@@ -62,7 +65,7 @@
     "typescript": "^3.9.5"
   },
   "scripts": {
-    "clean": "rimraf dist node_modules",
+    "clean": "rimraf dist node_modules \"*.tgz\"",
     "compile": "tsc -p tsconfig.json --noEmit",
     "start": "npm run watch",
     "watch": "tsdx watch --noClean --name TSLibrary --format esm,umd",
