@@ -2764,7 +2764,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-eslint@npm:^10.0.3":
+"babel-eslint@npm:*, babel-eslint@npm:^10.0.3":
   version: 10.1.0
   resolution: "babel-eslint@npm:10.1.0"
   dependencies:
@@ -4164,7 +4164,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-prettier@npm:^6.0.0, eslint-config-prettier@npm:^6.11.0":
+"eslint-config-prettier@npm:*, eslint-config-prettier@npm:^6.0.0, eslint-config-prettier@npm:^6.11.0":
   version: 6.11.0
   resolution: "eslint-config-prettier@npm:6.11.0"
   dependencies:
