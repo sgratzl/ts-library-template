@@ -24,5 +24,7 @@
   "editor.tabSize": 2,
   "typescript.tsdk": ".yarn/sdks/typescript/lib",
   "typescript.enablePromptUseWorkspaceTsdk": true,
-  "npm.packageManager": "yarn"
+  "prettier.packageManager": "yarn",
+  "eslint.packageManager": "yarn",
+  "npm.packageManager": "yarn",
 }
