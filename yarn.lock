@@ -3910,13 +3910,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"deprecated-obj@npm:1.0.1":
-  version: 1.0.1
-  resolution: "deprecated-obj@npm:1.0.1"
+"deprecated-obj@npm:2.0.0":
+  version: 2.0.0
+  resolution: "deprecated-obj@npm:2.0.0"
   dependencies:
-    flat: ^4.1.0
-    lodash: ^4.17.11
-  checksum: 6288b45cb2e8517f3809bee76a0e5a351e415a245fe95fc124fdf027719fa0f5c2c1a7c4eefdc68e87ee29d505c9b5e933f651d72663ace7f51a3640abe09a56
+    flat: ^5.0.2
+    lodash: ^4.17.20
+  checksum: 0f094af18e7f9e7c06d40c814d95b30960a93f6a9a886e6ca9d7d27f27897002cbdf7c302e3fd9e4a040b1e43efa0ae0ad14305b129244f03052bddc5ca1a5ac
   languageName: node
   linkType: hard
 
@@ -4983,14 +4983,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"flat@npm:^4.1.0":
-  version: 4.1.0
-  resolution: "flat@npm:4.1.0"
-  dependencies:
-    is-buffer: ~2.0.3
+"flat@npm:^5.0.2":
+  version: 5.0.2
+  resolution: "flat@npm:5.0.2"
   bin:
     flat: cli.js
-  checksum: 986b9e7598c6352a6bcc1190fffde0e1b573c8e03c8f8117d8a5696f291163c906e5c168e6cea9e5dae0ca241b734a480fa33f4174009295a572e035dfe156c7
+  checksum: 549b3012e9c8e90da9eab25c283443a39a6c5b0a35a6d382827e4bfc5e88161d1dac5faf667f6255571a42edc58e679b432a1452b9bdbd7ab16718a740bef556
   languageName: node
   linkType: hard
 
@@ -5827,13 +5825,6 @@ fsevents@^1.2.7:
   version: 1.1.6
   resolution: "is-buffer@npm:1.1.6"
   checksum: 336ec78f00e88efe6ff6f1aa08d06aadb942a6cd320e5f538ac00648378fb964743b3737c88ce7ce8741c067e4a3b78f596b83ee1a3c72dc2885ea0b03dc84f2
-  languageName: node
-  linkType: hard
-
-"is-buffer@npm:~2.0.3":
-  version: 2.0.4
-  resolution: "is-buffer@npm:2.0.4"
-  checksum: cd1cbc19e5ad2f33284109210945606494bf1adbe775b157b18ffeeb98571187d5fd1dc3fcd36566f67b90a776e364262f496c8998f8f369694b68ad334f8655
   languageName: node
   linkType: hard
 
@@ -7255,14 +7246,14 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"lodash@npm:4.17.20, lodash@npm:^4.17.19":
+"lodash@npm:4.17.20, lodash@npm:^4.17.19, lodash@npm:^4.17.20":
   version: 4.17.20
   resolution: "lodash@npm:4.17.20"
   checksum: c62101d2500c383b5f174a7e9e6fe8098149ddd6e9ccfa85f36d4789446195f5c4afd3cfba433026bcaf3da271256566b04a2bf2618e5a39f6e67f8c12030cb6
   languageName: node
   linkType: hard
 
-"lodash@npm:^4.17.11, lodash@npm:^4.17.13, lodash@npm:^4.17.14, lodash@npm:^4.17.15, lodash@npm:^4.17.4":
+"lodash@npm:^4.17.13, lodash@npm:^4.17.14, lodash@npm:^4.17.15, lodash@npm:^4.17.4":
   version: 4.17.15
   resolution: "lodash@npm:4.17.15"
   checksum: aec3fbb7570aa67bda500b8299b1b1821d60646bede87f76a74dfcc7666ab3445267d734ec71424d70809d52ad67a1356fab5ab694a3faa1908d68e9d48f00f5
@@ -8920,9 +8911,9 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"release-it@npm:^13.6.7":
-  version: 13.6.7
-  resolution: "release-it@npm:13.6.7"
+"release-it@npm:^13.6.8":
+  version: 13.6.8
+  resolution: "release-it@npm:13.6.8"
   dependencies:
     "@iarna/toml": 2.2.5
     "@octokit/rest": 18.0.3
@@ -8930,7 +8921,7 @@ fsevents@^1.2.7:
     chalk: 4.1.0
     cosmiconfig: 7.0.0
     debug: 4.1.1
-    deprecated-obj: 1.0.1
+    deprecated-obj: 2.0.0
     detect-repo-changelog: 1.0.1
     execa: 4.0.3
     find-up: 5.0.0
@@ -8949,7 +8940,7 @@ fsevents@^1.2.7:
     semver: 7.3.2
     shelljs: 0.8.4
     supports-color: 7.1.0
-    update-notifier: 4.1.0
+    update-notifier: 4.1.1
     url-join: 4.0.1
     uuid: 8.3.0
     window-size: 1.1.1
@@ -8957,7 +8948,7 @@ fsevents@^1.2.7:
     yargs-parser: 19.0.1
   bin:
     release-it: bin/release-it.js
-  checksum: 03f0f81ad68a4339c190a3c40e9562c796cbb0217eebaa52c5d839906c73e2efe6f078c81b30c13165fdc9a2d413e24a5efe30c9fee9ccd560b66af3f541c7a6
+  checksum: 6e51d35cd03ae37a0e1dd485b3b11d3086995c99c6deea7dbc76e179d9929d783612cb0ac02b1328a26645615550ebc5c72d592fb0b016444d5c7b23b89eeea2
   languageName: node
   linkType: hard
 
@@ -9346,9 +9337,9 @@ resolve@1.15.1:
   languageName: node
   linkType: hard
 
-"rollup@npm:^2.26.3":
-  version: 2.26.3
-  resolution: "rollup@npm:2.26.3"
+"rollup@npm:^2.26.4":
+  version: 2.26.4
+  resolution: "rollup@npm:2.26.4"
   dependencies:
     fsevents: ~2.1.2
   dependenciesMeta:
@@ -9356,7 +9347,7 @@ resolve@1.15.1:
       optional: true
   bin:
     rollup: dist/bin/rollup
-  checksum: ebcf760a0dc73d9f9d2adedc87db4227f36059ce7a0c83c89ce4f37837f3c7aa3ce7c62699604ea9e6ac85573956a071237c8f91e2b441545721088b0de19ab4
+  checksum: 8ab966be54b5dbbe9ada833208a24e9f5a7a4c3fca58659f9a4e03c6cd94b4d8f19437ce3ce8af055859e415327de1b8f5cb0d331fa886db2583992e8e2ef6d6
   languageName: node
   linkType: hard
 
@@ -10330,16 +10321,16 @@ resolve@1.15.1:
     eslint-plugin-react: ^7.20.6
     eslint-plugin-react-hooks: ^4.1.0
     prettier: ^2.0.5
-    release-it: ^13.6.7
+    release-it: ^13.6.8
     rimraf: ^3.0.2
-    rollup: ^2.26.3
+    rollup: ^2.26.4
     rollup-plugin-cleanup: ^3.1.1
     rollup-plugin-dts: ^1.4.10
     rollup-plugin-pnp-resolve: ^2.0.0
     tsdx: ~0.13.2
     tslib: ^2.0.1
     typedoc: ^0.18.0
-    typescript: ^3.9.7
+    typescript: ^4.0.2
   languageName: unknown
   linkType: soft
 
@@ -10563,13 +10554,13 @@ typescript@^3.7.3:
   languageName: node
   linkType: hard
 
-typescript@^3.9.7:
-  version: 3.9.7
-  resolution: "typescript@npm:3.9.7"
+typescript@^4.0.2:
+  version: 4.0.2
+  resolution: "typescript@npm:4.0.2"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 10848a9c35fd8c70a8792b8bd9485317534bcd58768793d3b7d9c7486e9fd30cf345f83fa2a324e0bf6088bc8a4d8d061d58fda38b18c2ff187cf01fbbff6267
+  checksum: cc0e7806eee7997a1b4b2990badacc4a8d089893ed0a377f35c9658e2ac392503cb340d0187203ed82e36e427dda94b0fb7107e44a71cca99efac86be26e16ee
   languageName: node
   linkType: hard
 
@@ -10583,13 +10574,13 @@ typescript@^3.9.7:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^3.9.7#builtin<compat/typescript>":
-  version: 3.9.7
-  resolution: "typescript@patch:typescript@npm%3A3.9.7#builtin<compat/typescript>::version=3.9.7&hash=5b02a2"
+"typescript@patch:typescript@^4.0.2#builtin<compat/typescript>":
+  version: 4.0.2
+  resolution: "typescript@patch:typescript@npm%3A4.0.2#builtin<compat/typescript>::version=4.0.2&hash=5b02a2"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: f0d3d9c987860c7c458229ab6dd7e3d322405db36b70abccba610b5efd9f9451e4e67a3fc7983c0d3741033c1f1a8d7aa859a1510caa8f20fad762fc39648bfa
+  checksum: b8b689ef994cce4fe59950d56ddfffce3c4bdda8edb85b72e752d4a6d27bf7df8a318e76ccde25cbe6e642058f2f4ccf47187db4b243bbc98278a2844db9461b
   languageName: node
   linkType: hard
 
@@ -10696,9 +10687,9 @@ typescript@^3.9.7:
   languageName: node
   linkType: hard
 
-"update-notifier@npm:4.1.0":
-  version: 4.1.0
-  resolution: "update-notifier@npm:4.1.0"
+"update-notifier@npm:4.1.1":
+  version: 4.1.1
+  resolution: "update-notifier@npm:4.1.1"
   dependencies:
     boxen: ^4.2.0
     chalk: ^3.0.0
@@ -10713,7 +10704,7 @@ typescript@^3.9.7:
     pupa: ^2.0.1
     semver-diff: ^3.1.1
     xdg-basedir: ^4.0.0
-  checksum: 2d35bb8785da43c247c5c7b7734c50c040378de61569afbfc22681b46066240ccdf717b38a62483926f6452f26a547418768627a2f0dede70ca6f4f0b5c78309
+  checksum: e607ff849d83e1112cc6ed5bfd2c8081723f1bce9ce3904c49ef0a1e5bc930afb8ebb725f015f35b481c0ce508483648f4e6dc8da9a1b7819210ec0800ae2cc9
   languageName: node
   linkType: hard
 
