@@ -23,18 +23,21 @@ const banner = `/**
  */
 const watchOnly = ['umd'];
 
+const isDependency = (v) => Object.keys(pkg.dependencies || {}).some((e) => e === v || v.startsWith(e + '/'));
+const isPeerDependency = (v) => Object.keys(pkg.peerDependencies || {}).some((e) => e === v || v.startsWith(e + '/'));
+
 export default (options) => {
   const buildFormat = (format) => {
     return !options.watch || watchOnly.includes(format);
   };
-  const commonOutput = {
-    sourcemap: true,
-    banner,
-    globals: {},
-  };
   const base = {
     input: './src/index.ts',
-    external: Object.keys(pkg.dependencies || {}).concat(Object.keys(pkg.peerDependencies || {})),
+    output: {
+      sourcemap: true,
+      banner,
+      globals: {},
+    },
+    external: (v) => isDependency(v) || isPeerDependency(v),
     plugins: [
       typescript(),
       resolve(),
@@ -56,12 +59,12 @@ export default (options) => {
       ...base,
       output: [
         buildFormat('esm') && {
-          ...commonOutput,
+          ...base.output,
           file: pkg.module,
           format: 'esm',
         },
         buildFormat('esm') && {
-          ...commonOutput,
+          ...base.output,
           file: pkg.main,
           format: 'cjs',
         },
@@ -71,25 +74,25 @@ export default (options) => {
       ...base,
       output: [
         buildFormat('umd') && {
-          ...commonOutput,
+          ...base.output,
           file: pkg.unpkg.replace('.min', ''),
           format: 'umd',
           name: pkg.global,
         },
         buildFormat('umd-min') && {
-          ...commonOutput,
+          ...base.output,
           file: pkg.unpkg,
           format: 'umd',
           name: pkg.global,
           plugins: [terser()],
         },
       ].filter(Boolean),
-      external: Object.keys(pkg.peerDependencies || {}),
+      external: (v) => isPeerDependency(v),
     },
     buildFormat('types') && {
       ...base,
       output: {
-        ...commonOutput,
+        ...base.output,
         file: pkg.types,
         format: 'es',
       },
