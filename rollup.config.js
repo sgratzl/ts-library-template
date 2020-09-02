@@ -1,5 +1,5 @@
 import commonjs from '@rollup/plugin-commonjs';
-import resolve from 'rollup-plugin-pnp-resolve';
+import resolve from '@rollup/plugin-node-resolve';
 import cleanup from 'rollup-plugin-cleanup';
 import dts from 'rollup-plugin-dts';
 import typescript from '@rollup/plugin-typescript';
@@ -11,10 +11,10 @@ import fs from 'fs';
 const pkg = JSON.parse(fs.readFileSync('./package.json'));
 
 const banner = `/**
- * ts-library-template
- * https://github.com/sgratzl/ts-library-template
+ * ${pkg.name}
+ * ${pkg.homepage}
  *
- * Copyright (c) 2020 Samuel Gratzl <sam@sgratzl.com>
+ * Copyright (c) ${new Date().getFullYear()} ${pkg.author.name} <${pkg.author.email}>
  */
 `;
 
@@ -24,20 +24,19 @@ export default [
     output: [
       {
         sourcemap: true,
-        file: 'dist/index.esm.js',
+        file: pkg.module,
         format: 'esm',
         banner,
       },
       {
         sourcemap: true,
-        file: 'dist/index.js',
-        format: 'umd',
-        name: pkg.global,
+        file: pkg.main,
+        format: 'cjs',
         banner,
       },
       {
         sourcemap: true,
-        file: 'dist/index.min.js',
+        file: pkg.unpkg,
         format: 'umd',
         name: pkg.global,
         banner,
@@ -46,13 +45,14 @@ export default [
     ],
     external: Object.keys(pkg.dependencies || {}).concat(Object.keys(pkg.peerDependencies || {})),
     plugins: [
-      replace({
-        // eslint-disable-next-line no-undef
-        'process.env.NODE_ENV': process.env.NODE_ENV || 'production',
-      }),
+      typescript(),
       resolve(),
       commonjs(),
-      typescript(),
+      replace({
+        // eslint-disable-next-line no-undef
+        'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV) || 'production',
+        __VERSION__: JSON.stringify(pkg.version),
+      }),
       cleanup({
         comments: ['some', 'ts', 'ts3s'],
         extensions: ['ts', 'tsx', 'js', 'jsx'],
@@ -64,7 +64,7 @@ export default [
     input: './src/index.ts',
     output: [
       {
-        file: 'dist/index.d.ts',
+        file: pkg.types,
         format: 'es',
         banner,
       },
