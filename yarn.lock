@@ -4227,13 +4227,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"estree-walker@npm:^0.6.1":
-  version: 0.6.1
-  resolution: "estree-walker@npm:0.6.1"
-  checksum: a63b94b841fcda2d79ff8e313b4ea8439b3364094ba66547289814bd7da4399a54cd33849b23504d239266430f219a142627071201a9fb6eb488bd025575f8fc
-  languageName: node
-  linkType: hard
-
 "estree-walker@npm:^1.0.1":
   version: 1.0.1
   resolution: "estree-walker@npm:1.0.1"
@@ -6166,17 +6159,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"js-cleanup@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "js-cleanup@npm:1.0.1"
-  dependencies:
-    magic-string: ^0.25.1
-    perf-regexes: ^1.0.1
-    skip-regex: ^1.0.2
-  checksum: 31da4a33a559ec9837f3a4c36571c01cfd38b7675c195d3bf3a6a649dac1a48b4bd608e50705ae912bbd42538eadf075da97fcd478acc02b5c544a653c89e419
-  languageName: node
-  linkType: hard
-
 "js-tokens@npm:^3.0.0 || ^4.0.0, js-tokens@npm:^4.0.0":
   version: 4.0.0
   resolution: "js-tokens@npm:4.0.0"
@@ -6643,7 +6625,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"magic-string@npm:^0.25.1, magic-string@npm:^0.25.5, magic-string@npm:^0.25.7":
+"magic-string@npm:^0.25.5, magic-string@npm:^0.25.7":
   version: 0.25.7
   resolution: "magic-string@npm:0.25.7"
   dependencies:
@@ -7534,13 +7516,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"perf-regexes@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "perf-regexes@npm:1.0.1"
-  checksum: 0aa34565ba249739d4c3c0a1b407be88ea48be2eb910b73d529a923f20b5043feb1bb43470457226d78fd7778e7d8c176b28148c8bd14a511222c68555b1d383
-  languageName: node
-  linkType: hard
-
 "performance-now@npm:^2.1.0":
   version: 2.1.0
   resolution: "performance-now@npm:2.1.0"
@@ -8280,18 +8255,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rollup-plugin-cleanup@npm:^3.1.1":
-  version: 3.1.1
-  resolution: "rollup-plugin-cleanup@npm:3.1.1"
-  dependencies:
-    js-cleanup: ^1.0.1
-    rollup-pluginutils: ^2.3.3
-  peerDependencies:
-    rollup: ">=0.50.0"
-  checksum: 7c6a4f583ca746faf56f0c48dbd49b8c354453f7bdac9f5f3830178387e8ee1c86a973a114c9ad5565a3576fd4460e11aa6bcad0ae727a24a50bc49c41a30b8f
-  languageName: node
-  linkType: hard
-
 "rollup-plugin-dts@npm:^1.4.12":
   version: 1.4.12
   resolution: "rollup-plugin-dts@npm:1.4.12"
@@ -8318,15 +8281,6 @@ __metadata:
   peerDependencies:
     rollup: ^2.0.0
   checksum: 891e7f5faebf896024bfd76569bbd6fd040eed395490b0eec6270742189db2b5e4d3102b1af3d243d63ef44994acf537fe9e02ead7b55eec6c5c75a30d43c633
-  languageName: node
-  linkType: hard
-
-"rollup-pluginutils@npm:^2.3.3":
-  version: 2.8.2
-  resolution: "rollup-pluginutils@npm:2.8.2"
-  dependencies:
-    estree-walker: ^0.6.1
-  checksum: 6922c1a26df033cc3da4650106244fb2211b5ddf72a93be5010cbe51a0817c9abcab08f61cbc3f5fc906b2701df123d8c9b0dae0a34e69dd07218e34e5d357b8
   languageName: node
   linkType: hard
 
@@ -8578,13 +8532,6 @@ __metadata:
   version: 1.0.5
   resolution: "sisteransi@npm:1.0.5"
   checksum: 6554debe10fa4c6a7e8d58531313fdb61c39bb435ba420f8d7a01d8aaffecc654cca846b586e33f3c904350e24f229d5bbd8069abdb583c93252849a0f73e933
-  languageName: node
-  linkType: hard
-
-"skip-regex@npm:^1.0.2":
-  version: 1.0.2
-  resolution: "skip-regex@npm:1.0.2"
-  checksum: 84bb6382b823949691cec53a2d3d8d872994009cced78f107c36cca3667c3b99a6db8e5b27deb12f60f152a326a12b1f8ace045263da17b6da03004a7d0a35f8
   languageName: node
   linkType: hard
 
@@ -9335,7 +9282,6 @@ __metadata:
     release-it: ^13.7.0
     rimraf: ^3.0.2
     rollup: ^2.26.9
-    rollup-plugin-cleanup: ^3.1.1
     rollup-plugin-dts: ^1.4.12
     rollup-plugin-terser: ^7.0.1
     ts-jest: ^26.3.0

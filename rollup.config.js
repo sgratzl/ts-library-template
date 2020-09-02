@@ -1,6 +1,5 @@
 import commonjs from '@rollup/plugin-commonjs';
 import resolve from '@rollup/plugin-node-resolve';
-import cleanup from 'rollup-plugin-cleanup';
 import dts from 'rollup-plugin-dts';
 import typescript from '@rollup/plugin-typescript';
 import { terser } from 'rollup-plugin-terser';
@@ -28,16 +27,15 @@ const isDependency = (v) => Object.keys(pkg.dependencies || {}).some((e) => e ==
 const isPeerDependency = (v) => Object.keys(pkg.peerDependencies || {}).some((e) => e === v || v.startsWith(e + '/'));
 
 export default (options) => {
-  const buildFormat = (format) => {
-    return !options.watch || watchOnly.includes(format);
-  };
+  const buildFormat = (format) => !options.watch || watchOnly.includes(format);
+
   const base = {
     input: './src/index.ts',
     output: {
       sourcemap: true,
       banner,
-      globals: {},
       exports: 'named',
+      globals: {},
     },
     external: (v) => isDependency(v) || isPeerDependency(v),
     plugins: [
@@ -48,11 +46,6 @@ export default (options) => {
         // eslint-disable-next-line no-undef
         'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV) || 'production',
         __VERSION__: JSON.stringify(pkg.version),
-      }),
-      cleanup({
-        comments: ['some', 'ts', 'ts3s'],
-        extensions: ['ts', 'tsx', 'js', 'jsx'],
-        include: './src/**/*',
       }),
     ],
   };
@@ -65,33 +58,35 @@ export default (options) => {
           file: pkg.module,
           format: 'esm',
         },
-        buildFormat('esm') && {
+        buildFormat('cjs') && {
           ...base.output,
           file: pkg.main,
           format: 'cjs',
         },
       ].filter(Boolean),
     },
-    buildFormat('umd') && {
-      ...base,
-      output: [
-        {
-          ...base.output,
-          file: pkg.unpkg,
-          format: 'umd',
-          name: pkg.global,
-        },
-        {
-          ...base.output,
-          file: pkg.unpkg.replace('.js', '.min.js'),
-          format: 'umd',
-          name: pkg.global,
-          plugins: [terser()],
-        },
-      ],
-      external: (v) => isPeerDependency(v),
-      plugins: [...base.plugins, babel({ presets: ['@babel/env'], babelHelpers: 'bundled' })],
-    },
+    buildFormat('umd') &&
+      pkg.unpkg && {
+        ...base,
+        input: fs.existsSync(base.input.replace('.ts', '.umd.ts')) ? base.input.replace('.ts', '.umd.ts') : base.input,
+        output: [
+          {
+            ...base.output,
+            file: pkg.unpkg,
+            format: 'umd',
+            name: pkg.global,
+          },
+          {
+            ...base.output,
+            file: pkg.unpkg.replace('.js', '.min.js'),
+            format: 'umd',
+            name: pkg.global,
+            plugins: [terser()],
+          },
+        ],
+        external: (v) => isPeerDependency(v),
+        plugins: [...base.plugins, babel({ presets: ['@babel/env'], babelHelpers: 'bundled' })],
+      },
     buildFormat('types') && {
       ...base,
       output: {
