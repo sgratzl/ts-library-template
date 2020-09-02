@@ -5,6 +5,7 @@ import dts from 'rollup-plugin-dts';
 import typescript from '@rollup/plugin-typescript';
 import { terser } from 'rollup-plugin-terser';
 import replace from '@rollup/plugin-replace';
+import babel from '@rollup/plugin-babel';
 
 import fs from 'fs';
 
@@ -36,6 +37,7 @@ export default (options) => {
       sourcemap: true,
       banner,
       globals: {},
+      exports: 'named',
     },
     external: (v) => isDependency(v) || isPeerDependency(v),
     plugins: [
@@ -70,24 +72,25 @@ export default (options) => {
         },
       ].filter(Boolean),
     },
-    (buildFormat('umd') || buildFormat('umd-min')) && {
+    buildFormat('umd') && {
       ...base,
       output: [
-        buildFormat('umd') && {
-          ...base.output,
-          file: pkg.unpkg.replace('.min', ''),
-          format: 'umd',
-          name: pkg.global,
-        },
-        buildFormat('umd-min') && {
+        {
           ...base.output,
           file: pkg.unpkg,
           format: 'umd',
           name: pkg.global,
+        },
+        {
+          ...base.output,
+          file: pkg.unpkg.replace('.js', '.min.js'),
+          format: 'umd',
+          name: pkg.global,
           plugins: [terser()],
         },
-      ].filter(Boolean),
+      ],
       external: (v) => isPeerDependency(v),
+      plugins: [...base.plugins, babel({ presets: ['@babel/env'], babelHelpers: 'bundled' })],
     },
     buildFormat('types') && {
       ...base,
