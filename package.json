@@ -23,6 +23,9 @@
     "url": "https://github.com/sgratzl/ts-library-template.git"
   },
   "global": "TSLibrary",
+  "dependencies": {
+    "d3-array": "^2.7.1"
+  },
   "module": "build/index.esm.js",
   "main": "build/index.js",
   "unpkg": "build/index.umd.min.js",
@@ -43,7 +46,6 @@
     "@typescript-eslint/eslint-plugin": "^4.0.1",
     "@typescript-eslint/parser": "^4.0.1",
     "@yarnpkg/pnpify": "^2.2.1",
-    "d3-array": "^2.7.1",
     "eslint": "^7.8.1",
     "eslint-config-prettier": "^6.11.0",
     "eslint-config-react-app": "^5.2.1",
