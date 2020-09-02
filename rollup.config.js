@@ -30,6 +30,7 @@ export default (options) => {
   const commonOutput = {
     sourcemap: true,
     banner,
+    globals: {},
   };
   const base = {
     input: './src/index.ts',
@@ -66,15 +67,23 @@ export default (options) => {
         },
       ].filter(Boolean),
     },
-    buildFormat('umd') && {
+    (buildFormat('umd') || buildFormat('umd-min')) && {
       ...base,
-      output: {
-        ...commonOutput,
-        file: pkg.unpkg,
-        format: 'umd',
-        name: pkg.global,
-        plugins: [terser()],
-      },
+      output: [
+        buildFormat('umd') && {
+          ...commonOutput,
+          file: pkg.unpkg.replace('.min', ''),
+          format: 'umd',
+          name: pkg.global,
+        },
+        buildFormat('umd-min') && {
+          ...commonOutput,
+          file: pkg.unpkg,
+          format: 'umd',
+          name: pkg.global,
+          plugins: [terser()],
+        },
+      ].filter(Boolean),
       external: Object.keys(pkg.peerDependencies || {}),
     },
     buildFormat('types') && {
