@@ -22,7 +22,7 @@
     "esModuleInterop": true,
     "rootDir": "./src",
     "baseUrl": "./",
-    "outDir": "./dist",
+    "noEmit": true,
     "paths": {
       "@": ["./src"],
       "*": ["*", "node_modules/*"]

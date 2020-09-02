@@ -1,3 +1,7 @@
-export function test() {
-  return 'hello-world';
+import { world } from './helper';
+
+export function helloWorld() {
+  return 'hello-' + world();
 }
+
+export * from './helper';
