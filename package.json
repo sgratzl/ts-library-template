@@ -34,8 +34,9 @@
   ],
   "module": "build/index.esm.js",
   "main": "build/index.js",
-  "unpkg": "build/index.umd.js",
-  "jsdelivr": "build/index.umd.js",
+  "browser": "build/index.umd.js",
+  "unpkg": "build/index.umd.min.js",
+  "jsdelivr": "build/index.umd.min.js",
   "types": "build/index.d.ts",
   "sideEffects": false,
   "files": [
