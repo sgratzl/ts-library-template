@@ -15,9 +15,7 @@
   "bugs": {
     "url": "https://github.com/sgratzl/ts-library-template/issues"
   },
-  "keywords": [
-    "TODO"
-  ],
+  "keywords": [],
   "repository": {
     "type": "git",
     "url": "https://github.com/sgratzl/ts-library-template.git"
