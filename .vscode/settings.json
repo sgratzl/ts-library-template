@@ -27,4 +27,8 @@
   "prettier.packageManager": "yarn",
   "eslint.packageManager": "yarn",
   "npm.packageManager": "yarn",
+  "search.exclude": {
+    "**/.yarn": true,
+    "**/.pnp.*": true
+  }
 }
