@@ -6,7 +6,7 @@ const pkg = require('./package.json');
 module.exports = {
   plugins: ['@typescript-eslint', 'prettier'],
   extends: [
-    'eslint:recommended',
+    'react-app',
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
     'prettier/@typescript-eslint',
