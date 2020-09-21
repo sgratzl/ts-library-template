@@ -4859,10 +4859,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"highlight.js@npm:^10.0.0":
-  version: 10.0.3
-  resolution: "highlight.js@npm:10.0.3"
-  checksum: 59d78b9dc985e896c83b2e2ef7550743757775391d1f7f0d3c61105dd368c1a9761e9958e7ed67e4bd14fc390094d143afe8a0c4966ee6b8297b3c637a14d206
+"highlight.js@npm:^10.2.0":
+  version: 10.2.0
+  resolution: "highlight.js@npm:10.2.0"
+  checksum: 249ae2aa4504200bb0bf856a0ed40dfd65f0302b5780dffcdc74d30bed31de72c9d1d1c2ab1fb6e365ebf7096064b69288cf1985c1d7bac6967fcb956ea7d247
   languageName: node
   linkType: hard
 
@@ -9075,7 +9075,7 @@ __metadata:
     rollup-plugin-terser: ^7.0.2
     ts-jest: ^26.4.0
     tslib: ^2.0.1
-    typedoc: ^0.19.1
+    typedoc: ^0.19.2
     typescript: ^4.0.3
   languageName: unknown
   linkType: soft
@@ -9195,22 +9195,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typedoc-default-themes@npm:^0.11.1":
-  version: 0.11.1
-  resolution: "typedoc-default-themes@npm:0.11.1"
-  dependencies:
-    lunr: ^2.3.9
-  checksum: a83a1984d64c3d64e60d29e0fb9e82bcd25d80a2d1949e3788eda9dbd6473d55bc8bb9c34a590725d7910ab86bce5e9a41a85480122ad6d65492b431a75f7458
+"typedoc-default-themes@npm:^0.11.4":
+  version: 0.11.4
+  resolution: "typedoc-default-themes@npm:0.11.4"
+  checksum: 1993030e242ae9cd8b25ec706d7fefccd14b6f8de8f766b55b9bfa1b7044e244eccec9e6ed2382f85a6cea23e547bf398125bcd6f359fa0647212802c0830f4f
   languageName: node
   linkType: hard
 
-"typedoc@npm:^0.19.1":
-  version: 0.19.1
-  resolution: "typedoc@npm:0.19.1"
+"typedoc@npm:^0.19.2":
+  version: 0.19.2
+  resolution: "typedoc@npm:0.19.2"
   dependencies:
     fs-extra: ^9.0.1
     handlebars: ^4.7.6
-    highlight.js: ^10.0.0
+    highlight.js: ^10.2.0
     lodash: ^4.17.20
     lunr: ^2.3.9
     marked: ^1.1.1
@@ -9218,12 +9216,12 @@ __metadata:
     progress: ^2.0.3
     semver: ^7.3.2
     shelljs: ^0.8.4
-    typedoc-default-themes: ^0.11.1
+    typedoc-default-themes: ^0.11.4
   peerDependencies:
     typescript: 3.9.x || 4.0.x
   bin:
     typedoc: bin/typedoc
-  checksum: aee83bcc5fc359193b94c8a20f7916440bfb8bd529d377e8818560e5711b685c66093c82a969a17217926a7a9da8e0c26fc92e1ad387566904767fd62f7deebb
+  checksum: fc33909c4d66a390fd6dfe7ef88a979d799413403af3f3dea4e320ea5cee07f06d5fda57b9b0872fad0b17a540ebe5e1a8829618c731d9dd7837ddfef8e9f2bf
   languageName: node
   linkType: hard
 
