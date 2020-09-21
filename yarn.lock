@@ -8080,9 +8080,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rollup@npm:^2.27.0":
-  version: 2.27.0
-  resolution: "rollup@npm:2.27.0"
+"rollup@npm:^2.28.1":
+  version: 2.28.1
+  resolution: "rollup@npm:2.28.1"
   dependencies:
     fsevents: ~2.1.2
   dependenciesMeta:
@@ -8090,7 +8090,7 @@ __metadata:
       optional: true
   bin:
     rollup: dist/bin/rollup
-  checksum: fefde079e4f84176e2b344a449e867e8e5c5292fa76f5f7834c7e987b5a9fc7d48f8707a6977fd663ddc59dee017ae6a80d575771c47878434cb005bca13e2cf
+  checksum: cd9068390c778a0400df99a43982f66ad71e33158fdcaeeb3f87a5cd68fbc20d71b6b0f4434face91adfcca5cc787fe112212d96ef3b85c68e88a71751c1dda1
   languageName: node
   linkType: hard
 
@@ -9070,7 +9070,7 @@ __metadata:
     prettier: ^2.1.2
     release-it: ^14.0.3
     rimraf: ^3.0.2
-    rollup: ^2.27.0
+    rollup: ^2.28.1
     rollup-plugin-dts: ^1.4.13
     rollup-plugin-terser: ^7.0.2
     ts-jest: ^26.4.0
