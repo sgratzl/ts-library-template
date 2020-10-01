@@ -1888,13 +1888,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jest@npm:26.x, @types/jest@npm:^26.0.13":
-  version: 26.0.13
-  resolution: "@types/jest@npm:26.0.13"
+"@types/jest@npm:26.x, @types/jest@npm:^26.0.14":
+  version: 26.0.14
+  resolution: "@types/jest@npm:26.0.14"
   dependencies:
     jest-diff: ^25.2.1
     pretty-format: ^25.2.1
-  checksum: 5476d59a99d1552d3ef99179d9ab8a59b24434c1990fda0836b8e6899a6a5fe898b62c0f0b8c9d3308b5c652cb95fca0b3b404028379b306f123a1e872413498
+  checksum: bddbe82d12217c5217efabcad09e4fbe2c5eaecf9392da9b0edbe4c3d9fb240b3fab914f88c5f3708f6d5046640a2782458944873eae4ac01abcb17d32d3c78f
   languageName: node
   linkType: hard
 
@@ -9052,7 +9052,7 @@ __metadata:
     "@rollup/plugin-replace": ^2.3.3
     "@rollup/plugin-typescript": ^6.0.0
     "@types/d3-array": ^2.0.0
-    "@types/jest": ^26.0.13
+    "@types/jest": ^26.0.14
     "@typescript-eslint/eslint-plugin": ^4.1.1
     "@typescript-eslint/parser": ^4.1.1
     "@yarnpkg/pnpify": ^2.2.1
