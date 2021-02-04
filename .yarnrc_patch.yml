@@ -1,1 +1,5 @@
-# packageExtensions:
+packageExtensions:
+  typedoc@*:
+    dependencies:
+      'shiki-themes': '*'
+
