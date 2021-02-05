@@ -8,7 +8,7 @@
     "sourceMap": true,
     "strict": true,
     "removeComments": true,
-    "importsNotUsedAsValues": "remove",
+    "importsNotUsedAsValues": "error",
     "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true,
     "strictBindCallApply": true,
