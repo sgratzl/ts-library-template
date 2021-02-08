@@ -4539,20 +4539,20 @@ __metadata:
   linkType: hard
 
 "fsevents@^2.1.2, fsevents@~2.3.1":
-  version: 2.3.1
-  resolution: "fsevents@npm:2.3.1"
+  version: 2.3.2
+  resolution: "fsevents@npm:2.3.2"
   dependencies:
     node-gyp: latest
-  checksum: 32619a121e7f9ac8a5ce4954f5fdf06be68b7b1c16e4ac8fa6e5e13cbf97d83c86cdcdf872ab7b188ebb07b34d2271b7818aebfc305b4a7d5b35f4bc2117f8be
+  checksum: a1883f4ca12b8b403ec528f1a4cb312b0877eacd24719da535cabea78d6fdd78530e3538bdba590a1c0f6c295128f964a89182621885296353a44dcfa4f9db53
   languageName: node
   linkType: hard
 
 "fsevents@patch:fsevents@^2.1.2#builtin<compat/fsevents>, fsevents@patch:fsevents@~2.3.1#builtin<compat/fsevents>":
-  version: 2.3.1
-  resolution: "fsevents@patch:fsevents@npm%3A2.3.1#builtin<compat/fsevents>::version=2.3.1&hash=11e9ea"
+  version: 2.3.2
+  resolution: "fsevents@patch:fsevents@npm%3A2.3.2#builtin<compat/fsevents>::version=2.3.2&hash=11e9ea"
   dependencies:
     node-gyp: latest
-  checksum: 66b24358e15cdd0f705b456346e58b4613f2bf54206b47874decda4152614fb0632d2d662c92b0ea54810109f646e5233e4cdd64dbb2a1949070ee5dc14dab87
+  checksum: 7b25d9251aefe433d508a0eb614217f0495ae05a9e8af15f7dbf9998e08c4e675acd1cf32361e0fcf71d917d9e8c4b76301fdc72a1ec1105a3ea0994f5e15a8d
   languageName: node
   linkType: hard
 
@@ -6550,7 +6550,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"marked@npm:^1.2.8":
+"marked@npm:^1.2.9":
   version: 1.2.9
   resolution: "marked@npm:1.2.9"
   bin:
@@ -8360,16 +8360,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"shiki-languages@npm:^0.2.7":
-  version: 0.2.7
-  resolution: "shiki-languages@npm:0.2.7"
-  dependencies:
-    vscode-textmate: ^5.2.0
-  checksum: 46e91b7cd8c2e2ebffc72243fc813acff1dd7124ff3b78b356bb1bea7b764fbe34fb1865651529f0b27948829c2901cea3672cd38052560f6e0b779a284cae31
-  languageName: node
-  linkType: hard
-
-"shiki-themes@npm:*, shiki-themes@npm:^0.2.7":
+"shiki-themes@npm:*":
   version: 0.2.7
   resolution: "shiki-themes@npm:0.2.7"
   dependencies:
@@ -8379,15 +8370,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"shiki@npm:^0.2.7":
-  version: 0.2.7
-  resolution: "shiki@npm:0.2.7"
+"shiki@npm:^0.9.2":
+  version: 0.9.2
+  resolution: "shiki@npm:0.9.2"
   dependencies:
     onigasm: ^2.2.5
-    shiki-languages: ^0.2.7
-    shiki-themes: ^0.2.7
     vscode-textmate: ^5.2.0
-  checksum: 4075bd1b7ca12c2ee44ab14691388651d7af69172259bd6af083d0841a6460572c0ef1b635fc15633972f4737dd476f4e71e7bbe32dec91100b2260346c8f3eb
+  checksum: 3177802720bec0605876c859f88200a0d109bb7db1656e190422d21563ac639cab36b01cd34cf82fe1673a3d63fac33be2f06cf9c1d6fe5a0552cbbfe1a82245
   languageName: node
   linkType: hard
 
@@ -9287,25 +9276,25 @@ __metadata:
   linkType: hard
 
 "typedoc@npm:^0.20.20":
-  version: 0.20.20
-  resolution: "typedoc@npm:0.20.20"
+  version: 0.20.23
+  resolution: "typedoc@npm:0.20.23"
   dependencies:
     colors: ^1.4.0
     fs-extra: ^9.1.0
     handlebars: ^4.7.6
     lodash: ^4.17.20
     lunr: ^2.3.9
-    marked: ^1.2.8
+    marked: ^1.2.9
     minimatch: ^3.0.0
     progress: ^2.0.3
     shelljs: ^0.8.4
-    shiki: ^0.2.7
+    shiki: ^0.9.2
     typedoc-default-themes: ^0.12.7
   peerDependencies:
     typescript: 3.9.x || 4.0.x || 4.1.x
   bin:
     typedoc: bin/typedoc
-  checksum: 889a4e9e5c72e7b099aba2ec8e84765d53803f546ebedd1661a059d69089ba5171884119dfcbe459ba857e4d3bb26e2325ead4377367f4d48e0832b201d0f842
+  checksum: 551640e42e050dba8de22450a91ae7daefb3755fa8d2d7dafc71a4d1a7acbf367798b2a84400dee69c2902a1f90be47038ac966f113b4692451de9bfd5c6cca5
   languageName: node
   linkType: hard
 
