@@ -1,5 +1,1 @@
 packageExtensions:
-  typedoc@*:
-    dependencies:
-      'shiki-themes': '*'
-
