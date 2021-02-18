@@ -29,7 +29,7 @@ jobs:
           git checkout HEAD^ -- yarn.lock
 
           # if package.json was not updated, upgrade the dependency
-          git diff --name-only HEAD^ HEAD | grep -q 'package.json' || yarn up `git log -1 --pretty=%s | awk '{ print $7 }'`
+          git diff --name-only HEAD^ HEAD | grep -q 'package.json' || yarn up `git log -1 --pretty=%s | awk '{ print $3 }'`
 
           # restore package.json from the last commit
           git checkout HEAD -- package.json
