@@ -5,10 +5,8 @@ updates:
     directory: '/'
     schedule:
       interval: 'weekly'
-    automerged_updates: true
   # Maintain dependencies for npm
   - package-ecosystem: 'npm'
     directory: '/'
     schedule:
       interval: 'weekly'
-    automerged_updates: true
