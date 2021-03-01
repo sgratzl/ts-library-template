@@ -43,8 +43,8 @@ jobs:
         with:
           file_pattern: yarn.lock
           commit_message: Dependabot autofix [skip netlify]
-      - uses: mshick/add-pr-comment@v1
-        with:
-          message: |
-            @dependabot squash and merge
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
+      # - uses: mshick/add-pr-comment@v1
+      #   with:
+      #     message: |
+      #       @dependabot squash and merge
+      #     repo-token: ${{ secrets.GITHUB_TOKEN }}
