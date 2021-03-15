@@ -1,13 +1,13 @@
 name: Dependabot
 
 on:
-  push:
-    branches: [dependabot/npm_and_yarn/**]
+  pull_request_target:
+    # branches: [dependabot/npm_and_yarn/**]
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    if: github.actor == 'dependabot[bot]'
+    if: github.actor == 'dependabot[bot]' and startsWith(github.head_ref, 'dependabot/npm_and_yarn/')
 
     steps:
       - uses: actions/checkout@v2
@@ -15,10 +15,10 @@ jobs:
           ref: ${{ github.head_ref }}
           fetch-depth: 2
           token: ${{ secrets.DEPENDABOT_PAT }}
-      - name: Use Node.js 12.x
+      - name: Use Node.js 14.x
         uses: actions/setup-node@v2.1.5
         with:
-          node-version: '12'
+          node-version: '14'
       - run: npm i -g yarn
       - run: yarn set version berry
       - run: cat .yarnrc_patch.yml >> .yarnrc.yml
