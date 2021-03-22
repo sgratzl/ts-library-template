@@ -3436,11 +3436,11 @@ __metadata:
   linkType: hard
 
 "d3-array@npm:^2.11.0":
-  version: 2.11.0
-  resolution: "d3-array@npm:2.11.0"
+  version: 2.12.0
+  resolution: "d3-array@npm:2.12.0"
   dependencies:
     internmap: ^1.0.0
-  checksum: d58eb9c53fcbcb896ec3c67b5eae0f752450baa0b3f382e0a4981823ac3f5fe11688174ab8b626579330e643971cb06f3b73aa4ccb5697cc861d76f7989d6ca0
+  checksum: fe270ac720a42b4f982580e636acbd69f690368b7b7176610c3f18a2a8c9de6df4424d160b8972a1e99dc71cce6b3d0a7a6f3bf5edbb7ac1de23e07daac8f359
   languageName: node
   linkType: hard
 
