@@ -1671,16 +1671,16 @@ __metadata:
   linkType: hard
 
 "@rollup/plugin-typescript@npm:^8.2.0":
-  version: 8.2.0
-  resolution: "@rollup/plugin-typescript@npm:8.2.0"
+  version: 8.2.1
+  resolution: "@rollup/plugin-typescript@npm:8.2.1"
   dependencies:
     "@rollup/pluginutils": ^3.1.0
     resolve: ^1.17.0
   peerDependencies:
     rollup: ^2.14.0
     tslib: "*"
-    typescript: ">=3.4.0"
-  checksum: 123b975f4f70476c535f20f8b806b52df86471fb812263828648016ea736d8571fc254633206e418367a384f5baa4b5e61677e1975414aa1cbc17ae250c6bd6a
+    typescript: ">=3.7.0"
+  checksum: 87f0a8308c734ee4f0e2c3bba4df5ac9965ae6f2ee8d77fd4ea2056030eff2882c51a3b056c06ca0ecc4f2d356885cbbc80cac366d40595d7dd7b89b0f38bfba
   languageName: node
   linkType: hard
 
