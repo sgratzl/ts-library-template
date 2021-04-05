@@ -8344,19 +8344,19 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"rollup-plugin-dts@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "rollup-plugin-dts@npm:2.0.1"
+"rollup-plugin-dts@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "rollup-plugin-dts@npm:3.0.1"
   dependencies:
-    "@babel/code-frame": ^7.10.4
+    "@babel/code-frame": ^7.12.13
     magic-string: ^0.25.7
   peerDependencies:
-    rollup: ^2.34.2
-    typescript: ^4.1.2
+    rollup: ^2.40.0
+    typescript: ^4.2.3
   dependenciesMeta:
     "@babel/code-frame":
       optional: true
-  checksum: 4f9e6d7462227fa7daf196bb39e1e9d4cbf332ceb6f875f520d0f3eb4951ffc68a0775fb130e99f1dbeba5d77ee07d955c7b5b56f258658098df5e85d4c99683
+  checksum: 742ac01358bfa730435247da72f6925541184534b53d9407063f5ad4e2ce8254f71f83c1617a1768b0bab90e650d4a994468a4057d5e7224deea8cbf43eb2ba6
   languageName: node
   linkType: hard
 
@@ -9372,7 +9372,7 @@ resolve@^2.0.0-next.3:
     release-it: ^14.4.1
     rimraf: ^3.0.2
     rollup: ^2.40.0
-    rollup-plugin-dts: ^2.0.1
+    rollup-plugin-dts: ^3.0.1
     rollup-plugin-terser: ^7.0.2
     ts-jest: ^26.5.2
     tslib: ^2.1.0
