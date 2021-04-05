@@ -8605,13 +8605,13 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"shiki@npm:^0.9.2":
-  version: 0.9.2
-  resolution: "shiki@npm:0.9.2"
+"shiki@npm:^0.9.3":
+  version: 0.9.3
+  resolution: "shiki@npm:0.9.3"
   dependencies:
     onigasm: ^2.2.5
     vscode-textmate: ^5.2.0
-  checksum: 3177802720bec0605876c859f88200a0d109bb7db1656e190422d21563ac639cab36b01cd34cf82fe1673a3d63fac33be2f06cf9c1d6fe5a0552cbbfe1a82245
+  checksum: fce8084727491c496187abe5b8f831dbecdada11ebcc2861335a31fb7eb3d3ebceaf50aec2f2d855f76af626ddb66dabd860536e334b3cb9feff7e79d61ccde0
   languageName: node
   linkType: hard
 
@@ -9503,16 +9503,16 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"typedoc-default-themes@npm:^0.12.8":
-  version: 0.12.8
-  resolution: "typedoc-default-themes@npm:0.12.8"
-  checksum: dd2a196f571d7ee03c3d0a713150fb3bb5c80a8432e9bd167d8b8f89986803c71b03eda41865ec64cbb82bda65f287adfd479543da828d24bd9fe2eae9507f30
+"typedoc-default-themes@npm:^0.12.9":
+  version: 0.12.10
+  resolution: "typedoc-default-themes@npm:0.12.10"
+  checksum: 3a420c405b00122c20018762ce145186219f26651a051216b1d4dafa1b3756a7e47290bf27898d3e2769af3a0da44591e3c93268c2a6503fcf28eb8b0f32980b
   languageName: node
   linkType: hard
 
 "typedoc@npm:^0.20.28":
-  version: 0.20.30
-  resolution: "typedoc@npm:0.20.30"
+  version: 0.20.35
+  resolution: "typedoc@npm:0.20.35"
   dependencies:
     colors: ^1.4.0
     fs-extra: ^9.1.0
@@ -9523,13 +9523,13 @@ resolve@^2.0.0-next.3:
     minimatch: ^3.0.0
     progress: ^2.0.3
     shelljs: ^0.8.4
-    shiki: ^0.9.2
-    typedoc-default-themes: ^0.12.8
+    shiki: ^0.9.3
+    typedoc-default-themes: ^0.12.9
   peerDependencies:
     typescript: 3.9.x || 4.0.x || 4.1.x || 4.2.x
   bin:
     typedoc: bin/typedoc
-  checksum: 32bf2726d222a290e9757301c03cc10c0e7588d6eebc1e8be4b3c487f9b836898db3fc672b7d98213edbb6c76e8c95ee9f1a5bd55d1dd1b13a7b3acda1f42a42
+  checksum: 107295014bc223dc789f99bb01ddebd9756ef5f624e21eb13bbdda974b17a1ccf125b87a8ab77520dae4399b3ec2791f5aa825cf470b73d7fdebae0a936039d7
   languageName: node
   linkType: hard
 
