@@ -6958,7 +6958,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"marked@npm:^2.0.1":
+"marked@npm:^2.0.3":
   version: 2.0.3
   resolution: "marked@npm:2.0.3"
   bin:
@@ -9825,7 +9825,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"typedoc-default-themes@npm:^0.12.9":
+"typedoc-default-themes@npm:^0.12.10":
   version: 0.12.10
   resolution: "typedoc-default-themes@npm:0.12.10"
   checksum: 3a420c405b00122c20018762ce145186219f26651a051216b1d4dafa1b3756a7e47290bf27898d3e2769af3a0da44591e3c93268c2a6503fcf28eb8b0f32980b
@@ -9833,25 +9833,25 @@ resolve@^2.0.0-next.3:
   linkType: hard
 
 "typedoc@npm:^0.20.35":
-  version: 0.20.35
-  resolution: "typedoc@npm:0.20.35"
+  version: 0.20.36
+  resolution: "typedoc@npm:0.20.36"
   dependencies:
     colors: ^1.4.0
     fs-extra: ^9.1.0
     handlebars: ^4.7.7
     lodash: ^4.17.21
     lunr: ^2.3.9
-    marked: ^2.0.1
+    marked: ^2.0.3
     minimatch: ^3.0.0
     progress: ^2.0.3
     shelljs: ^0.8.4
     shiki: ^0.9.3
-    typedoc-default-themes: ^0.12.9
+    typedoc-default-themes: ^0.12.10
   peerDependencies:
     typescript: 3.9.x || 4.0.x || 4.1.x || 4.2.x
   bin:
     typedoc: bin/typedoc
-  checksum: 107295014bc223dc789f99bb01ddebd9756ef5f624e21eb13bbdda974b17a1ccf125b87a8ab77520dae4399b3ec2791f5aa825cf470b73d7fdebae0a936039d7
+  checksum: 362a576deee8225e7f0e2722c91f9de553d8d821f0a7b07ac4bf9b9fa704452f495aba035e7c73af415b7363c88e80689f666e0b2dab3f29bb42eb5f2d7ae93c
   languageName: node
   linkType: hard
 
