@@ -37,13 +37,17 @@
   "jsdelivr": "build/index.umd.min.js",
   "types": "build/index.d.ts",
   "exports": {
-    "import": "./build/index.js",
-    "require": "./build/index.cjs",
-    "scripts": {
-      "development": "./build/index.umd.js",
-      "production": "./build/index.umd.min.js"
+    ".": {
+      "import": "./build/index.js",
+      "require": "./build/index.cjs",
+      "scripts": {
+        "development": "./build/index.umd.js",
+        "production": "./build/index.umd.min.js"
+      },
+      "types": "./build/index.d.ts"
     },
-    "types": "./build/index.d.ts"
+    "./src/*": "./build/src/*.js",
+    "./build/*": "./build/*"
   },
   "sideEffects": false,
   "files": [
