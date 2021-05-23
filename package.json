@@ -31,11 +31,20 @@
     "Firefox ESR"
   ],
   "module": "build/index.js",
-  "main": "build/index.cjs.js",
+  "main": "build/index.cjs",
   "browser": "build/index.umd.js",
   "unpkg": "build/index.umd.min.js",
   "jsdelivr": "build/index.umd.min.js",
   "types": "build/index.d.ts",
+  "exports": {
+    "import": "./build/index.js",
+    "require": "./build/index.cjs",
+    "scripts": {
+      "development": "./build/index.umd.js",
+      "production": "./build/index.umd.min.js"
+    },
+    "types": "./build/index.d.ts"
+  },
   "sideEffects": false,
   "files": [
     "build",
