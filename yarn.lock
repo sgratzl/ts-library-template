@@ -8742,18 +8742,18 @@ resolve@^2.0.0-next.3:
   linkType: hard
 
 "rollup-plugin-dts@npm:^3.0.1":
-  version: 3.0.1
-  resolution: "rollup-plugin-dts@npm:3.0.1"
+  version: 3.0.2
+  resolution: "rollup-plugin-dts@npm:3.0.2"
   dependencies:
     "@babel/code-frame": ^7.12.13
     magic-string: ^0.25.7
   peerDependencies:
-    rollup: ^2.40.0
-    typescript: ^4.2.3
+    rollup: ^2.48.0
+    typescript: ^4.2.4
   dependenciesMeta:
     "@babel/code-frame":
       optional: true
-  checksum: 742ac01358bfa730435247da72f6925541184534b53d9407063f5ad4e2ce8254f71f83c1617a1768b0bab90e650d4a994468a4057d5e7224deea8cbf43eb2ba6
+  checksum: 11e32d247652210bbf052ef8d09551a031f774ee7dfd4f3c7d11e3fd6ee60f1856ebebdbd041104ea049f86ab1e413c3f8db6c1bab015895fe82707b9f1ce251
   languageName: node
   linkType: hard
 
