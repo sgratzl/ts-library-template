@@ -1880,9 +1880,9 @@ __metadata:
   linkType: hard
 
 "@types/d3-array@npm:^2.9.0":
-  version: 2.9.0
-  resolution: "@types/d3-array@npm:2.9.0"
-  checksum: 6422177cd9f4de36b6dfd4258c3db1d96b6882544f6ff28b910a0d61386bbb95c79305d4bbf507534388edfced75ad6a2985dd237fe5a020b6d211099ac60504
+  version: 2.12.1
+  resolution: "@types/d3-array@npm:2.12.1"
+  checksum: 61a1470942c2ab65dd96d8601c041fbca6b8ff18c7f45c9d931cd7ca64d8530f601d65a9c3b7117774efa6db2686ead39f15113180d20c781549b047a593697c
   languageName: node
   linkType: hard
 
