@@ -7890,8 +7890,8 @@ resolve@^2.0.0-next.3:
   linkType: hard
 
 "rollup@npm:^2.50.6":
-  version: 2.50.6
-  resolution: "rollup@npm:2.50.6"
+  version: 2.51.0
+  resolution: "rollup@npm:2.51.0"
   dependencies:
     fsevents: ~2.3.1
   dependenciesMeta:
@@ -7899,7 +7899,7 @@ resolve@^2.0.0-next.3:
       optional: true
   bin:
     rollup: dist/bin/rollup
-  checksum: 68e9092c098f85dafd7ea35cd86b996ba5e70b91cb62bd1b02c0ddcec0f9fe74952695e529b002aeeee69443d287b8c9907cd63a24d062ec9e838a34766b481b
+  checksum: ccdf74c8af028916997a077b18124f2a558ecd37c48de254b479721c10c08656853fa55fb69897eea7fbc8e3d5a3367aa32d27bf3584ac78b70cd265965b9023
   languageName: node
   linkType: hard
 
