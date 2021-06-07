@@ -7678,8 +7678,8 @@ __metadata:
   linkType: hard
 
 "release-it@npm:^14.7.0":
-  version: 14.7.0
-  resolution: "release-it@npm:14.7.0"
+  version: 14.8.0
+  resolution: "release-it@npm:14.8.0"
   dependencies:
     "@iarna/toml": 2.2.5
     "@octokit/rest": 18.5.3
@@ -7711,7 +7711,7 @@ __metadata:
     yargs-parser: 20.2.7
   bin:
     release-it: bin/release-it.js
-  checksum: f73e94db7f43d5ef8cc36992c221c5cc8ca852b3a3f309b99b6ed2c21b5d3021942262f36d5efb35ca64ae658161860d5115111976afe80d24338c15ee3a0fde
+  checksum: 620efaa670975ac08c26f07f66bb3ce6be8a049d32eadf8eac0d13156914e8ce31d6e654239ca1b7b1aaa8e7dbabbcaa031a026493f1c58585dec5cec48f9176
   languageName: node
   linkType: hard
 
