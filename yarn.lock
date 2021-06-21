@@ -1898,10 +1898,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/d3-array@npm:^2.12.1":
-  version: 2.12.1
-  resolution: "@types/d3-array@npm:2.12.1"
-  checksum: 61a1470942c2ab65dd96d8601c041fbca6b8ff18c7f45c9d931cd7ca64d8530f601d65a9c3b7117774efa6db2686ead39f15113180d20c781549b047a593697c
+"@types/d3-array@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "@types/d3-array@npm:3.0.0"
+  checksum: 911a4c5983cb2ae4ae876cfaf9541edbbb9239d582453e09fdb1cf9543d51390b7031067feace6e5c0027869afc46085a488a60589a7e35573f9bf031e75b37b
   languageName: node
   linkType: hard
 
@@ -8623,7 +8623,7 @@ resolve@^2.0.0-next.3:
     "@rollup/plugin-node-resolve": ^13.0.0
     "@rollup/plugin-replace": ^2.4.2
     "@rollup/plugin-typescript": ^8.2.1
-    "@types/d3-array": ^2.12.1
+    "@types/d3-array": ^3.0.0
     "@types/jest": ^26.0.23
     "@typescript-eslint/eslint-plugin": ^4.26.0
     "@typescript-eslint/parser": ^4.26.0
