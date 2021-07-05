@@ -4008,14 +4008,14 @@ __metadata:
   linkType: hard
 
 "eslint-plugin-flowtype@npm:^5.7.2":
-  version: 5.7.2
-  resolution: "eslint-plugin-flowtype@npm:5.7.2"
+  version: 5.8.0
+  resolution: "eslint-plugin-flowtype@npm:5.8.0"
   dependencies:
     lodash: ^4.17.15
     string-natural-compare: ^3.0.1
   peerDependencies:
     eslint: ^7.1.0
-  checksum: 7a522a62783c4a155995b3c599fd8a452dfad2e09dafbcae619111df841fb41d4db489e2036ab582e862ac13a0d5568e0b895b5d1b1e883a4b3bcbf5a173f517
+  checksum: 899c44a77286ed6ae227d3e212d509c54beff222cf8d724d7c6d62f2b336e286bb70d1a4d3e1c85c3a1b0929728eb8e3604231fb316a8b89d0fd407c1504d5e3
   languageName: node
   linkType: hard
 
