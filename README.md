@@ -22,8 +22,6 @@ or at this [![Open in CodePen][codepen]](https://codepen.io/sgratzl/pen/TODO)
 
 ```sh
 npm i -g yarn
-yarn set version latest
-cat .yarnrc_patch.yml >> .yarnrc.yml
 yarn
 yarn sdks vscode
 ```
