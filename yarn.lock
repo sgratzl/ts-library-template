@@ -2019,46 +2019,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@yarnpkg/core@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "@yarnpkg/core@npm:3.0.0"
-  dependencies:
-    "@arcanis/slice-ansi": ^1.0.2
-    "@types/semver": ^7.1.0
-    "@types/treeify": ^1.0.0
-    "@yarnpkg/fslib": ^2.5.0
-    "@yarnpkg/json-proxy": ^2.1.1
-    "@yarnpkg/libzip": ^2.2.2
-    "@yarnpkg/parsers": ^2.4.0
-    "@yarnpkg/pnp": ^3.0.0
-    "@yarnpkg/shell": ^3.0.0
-    camelcase: ^5.3.1
-    chalk: ^3.0.0
-    ci-info: ^2.0.0
-    clipanion: ^3.0.1
-    cross-spawn: 7.0.3
-    diff: ^4.0.1
-    globby: ^11.0.1
-    got: ^11.7.0
-    json-file-plus: ^3.3.1
-    lodash: ^4.17.15
-    micromatch: ^4.0.2
-    mkdirp: ^0.5.1
-    p-limit: ^2.2.0
-    p-queue: ^6.0.0
-    pluralize: ^7.0.0
-    pretty-bytes: ^5.1.0
-    semver: ^7.1.2
-    stream-to-promise: ^2.2.0
-    strip-ansi: ^6.0.0
-    tar: ^6.0.5
-    treeify: ^1.1.0
-    tslib: ^1.13.0
-    tunnel: ^0.0.6
-  checksum: 87341e83e648eb121a5436ebd65ad85e44e2ea836646a7a77cc22a1e10a156390020e961701996cf79e477a10ec37ea4059a798447c574c786cf7b38a7a78042
-  languageName: node
-  linkType: hard
-
 "@yarnpkg/core@npm:^3.1.0-rc.2":
   version: 3.1.0-rc.2
   resolution: "@yarnpkg/core@npm:3.1.0-rc.2"
@@ -2139,26 +2099,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@yarnpkg/nm@npm:^2.4.1":
-  version: 2.4.1
-  resolution: "@yarnpkg/nm@npm:2.4.1"
-  dependencies:
-    "@yarnpkg/core": ^3.0.0
-    "@yarnpkg/fslib": ^2.5.0
-  checksum: e3b0978f136e4a354ab23a1e9d999158459a2df03149e3c98a1cf8101d931964bafb1a03794db0949899df9262d6b0bba4255b779464b9386d1e09790e1bfe16
-  languageName: node
-  linkType: hard
-
-"@yarnpkg/parsers@npm:^2.4.0":
-  version: 2.4.0
-  resolution: "@yarnpkg/parsers@npm:2.4.0"
-  dependencies:
-    js-yaml: ^3.10.0
-    tslib: ^1.13.0
-  checksum: ae077862b829defc95e85a328270dac5f242628656bb938e5da37913b1d0caab545de9ed9d1df3bc17f4e8da842b545df87931d39902aa2132e90699d96ecc33
-  languageName: node
-  linkType: hard
-
 "@yarnpkg/parsers@npm:^2.4.1-rc.1":
   version: 2.4.1-rc.1
   resolution: "@yarnpkg/parsers@npm:2.4.1-rc.1"
@@ -2169,7 +2109,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@yarnpkg/pnp@npm:^3.0.0, @yarnpkg/pnp@npm:^3.0.1-rc.1":
+"@yarnpkg/pnp@npm:^3.0.1-rc.1":
   version: 3.0.1
   resolution: "@yarnpkg/pnp@npm:3.0.1"
   dependencies:
@@ -2178,22 +2118,6 @@ __metadata:
     resolve.exports: ^1.0.2
     tslib: ^1.13.0
   checksum: cbcf7726f42ca86b42fd82fb4da312e007f9baa5e61cd97607d3783a7412519408aa2d553a13c8755f84fb0207389815e711f5f53855db9b5c5a25c57a8f58ee
-  languageName: node
-  linkType: hard
-
-"@yarnpkg/pnpify@npm:^3.0.1":
-  version: 3.0.1
-  resolution: "@yarnpkg/pnpify@npm:3.0.1"
-  dependencies:
-    "@yarnpkg/core": ^3.0.0
-    "@yarnpkg/fslib": ^2.5.1
-    "@yarnpkg/nm": ^2.4.1
-    clipanion: ^3.0.1
-    cross-spawn: 7.0.3
-    tslib: ^1.13.0
-  bin:
-    pnpify: ./lib/cli.js
-  checksum: 96572833604f3016679a56564ace79e877e6d2fe319f59a0987147c849d7c2bc87bc65afb897a9c9c1ee1a181b540dbc1f2968a6caf4776c754cf1005d589167
   languageName: node
   linkType: hard
 
@@ -2212,25 +2136,6 @@ __metadata:
   bin:
     sdks: ./lib/cli.js
   checksum: 2e13d590a0ce197ab0bd6725a263fffd2848126980cbe4b198f657b47ba7ede3d43d0d4e5578db808cdf5d0215e1d1c481d3c9fe38ccd496e2d02a013a946c1d
-  languageName: node
-  linkType: hard
-
-"@yarnpkg/shell@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "@yarnpkg/shell@npm:3.0.0"
-  dependencies:
-    "@yarnpkg/fslib": ^2.5.0
-    "@yarnpkg/parsers": ^2.4.0
-    chalk: ^3.0.0
-    clipanion: ^3.0.1
-    cross-spawn: 7.0.3
-    fast-glob: ^3.2.2
-    micromatch: ^4.0.2
-    stream-buffers: ^3.0.2
-    tslib: ^1.13.0
-  bin:
-    shell: ./lib/cli.js
-  checksum: fcddc49af7d3098ff959880e4fe4841d10efcc8424dbc0268daf5735485a6a91d04b3bf85a1e08f8571ddd3ac1437e4f8100cff88dd65c58f8688f9523357069
   languageName: node
   linkType: hard
 
@@ -7507,7 +7412,6 @@ resolve@^2.0.0-next.3:
     "@types/jest": ^27.0.1
     "@typescript-eslint/eslint-plugin": ^4.29.3
     "@typescript-eslint/parser": ^4.29.3
-    "@yarnpkg/pnpify": ^3.0.1
     "@yarnpkg/sdks": ^2.4.2-rc.1
     d3-array: ^2
     eslint: ^7.32.0
