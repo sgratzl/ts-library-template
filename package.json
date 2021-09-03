@@ -23,7 +23,7 @@
   "global": "TSLibrary",
   "dependencies": {
     "@types/d3-array": "^2",
-    "d3-array": "^2"
+    "d3-array": "^3"
   },
   "browserslist": [
     "last 2 Chrome version",
