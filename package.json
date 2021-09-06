@@ -22,7 +22,7 @@
   },
   "global": "TSLibrary",
   "dependencies": {
-    "@types/d3-array": "^2",
+    "@types/d3-array": "^3",
     "d3-array": "^2"
   },
   "browserslist": [
