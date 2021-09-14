@@ -31,6 +31,7 @@ jobs:
 
           # restore package.json from the last commit
           git checkout HEAD -- package.json
+      - run: yarn config set enableImmutableInstalls false
       - run: yarn install
       - run: |
           # install yarn-plugin-deduplicate
