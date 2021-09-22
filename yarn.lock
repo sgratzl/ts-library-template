@@ -5565,12 +5565,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"marked@npm:^3.0.3":
-  version: 3.0.3
-  resolution: "marked@npm:3.0.3"
+"marked@npm:^3.0.4":
+  version: 3.0.4
+  resolution: "marked@npm:3.0.4"
   bin:
     marked: bin/marked
-  checksum: 82651af57ae9d16199ba86f4d48474b6680521cbc0a8d1c142924b3977098a2d750f4eab3ca297ba8a083e4ef072721066e8f03b9a0a9a75948ee0be9506fc2f
+  checksum: fdc6bf48c1997ab5d0edead3748de785a333d7ce29fad7d4ed8e239b736b642c029796380ce39c97d934edd96c5e4cf05dd32116e7f6e80e05ea97b32cef6741
   languageName: node
   linkType: hard
 
@@ -6860,7 +6860,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"shiki@npm:^0.9.10":
+"shiki@npm:^0.9.11":
   version: 0.9.11
   resolution: "shiki@npm:0.9.11"
   dependencies:
@@ -7556,19 +7556,19 @@ resolve@^2.0.0-next.3:
   linkType: hard
 
 "typedoc@npm:^0.22.3":
-  version: 0.22.3
-  resolution: "typedoc@npm:0.22.3"
+  version: 0.22.4
+  resolution: "typedoc@npm:0.22.4"
   dependencies:
     glob: ^7.1.7
     lunr: ^2.3.9
-    marked: ^3.0.3
+    marked: ^3.0.4
     minimatch: ^3.0.4
-    shiki: ^0.9.10
+    shiki: ^0.9.11
   peerDependencies:
     typescript: 4.0.x || 4.1.x || 4.2.x || 4.3.x || 4.4.x
   bin:
     typedoc: bin/typedoc
-  checksum: 65a930a02f9ce6339ab44163efe90d6bb6bcae7054da9c698fa421b4c1d0d199b84a10ff13b0899366c17939a55c65821fc7506149aa7cf1bff0ac4a3b04bc26
+  checksum: f47dfda72fef98db26ddf93d8bedfb34455f36930bd6120a600f1efbb725f8d053965e35575d45e6c721c3cc8bd5db80d8da1e3a46cf22ad759891f3d2ad582f
   languageName: node
   linkType: hard
 
