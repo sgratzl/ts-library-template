@@ -5,12 +5,7 @@ const pkg = require('./package.json');
 
 module.exports = {
   plugins: ['prettier'],
-  extends: [
-    //'airbnb-typescript',
-    'react-app',
-    'plugin:prettier/recommended',
-    'prettier',
-  ],
+  extends: ['airbnb-typescript', 'react-app', 'plugin:prettier/recommended', 'prettier'],
   parserOptions: {
     project: './tsconfig.eslint.json',
   },
