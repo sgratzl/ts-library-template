@@ -4714,7 +4714,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"glob@npm:^8.0.1, glob@npm:^8.0.3":
+"glob@npm:^8.0.1":
   version: 8.0.3
   resolution: "glob@npm:8.0.3"
   dependencies:
@@ -7834,7 +7834,7 @@ __metadata:
     rollup-plugin-dts: ^4.2.2
     ts-jest: ^28.0.4
     tslib: ^2.4.0
-    typedoc: ^0.22.17
+    typedoc: ^0.23.5
     typescript: ^4.7.3
   languageName: unknown
   linkType: soft
@@ -7929,20 +7929,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typedoc@npm:^0.22.17":
-  version: 0.22.17
-  resolution: "typedoc@npm:0.22.17"
+"typedoc@npm:^0.23.5":
+  version: 0.23.5
+  resolution: "typedoc@npm:0.23.5"
   dependencies:
-    glob: ^8.0.3
     lunr: ^2.3.9
     marked: ^4.0.16
     minimatch: ^5.1.0
     shiki: ^0.10.1
   peerDependencies:
-    typescript: 4.0.x || 4.1.x || 4.2.x || 4.3.x || 4.4.x || 4.5.x || 4.6.x || 4.7.x
+    typescript: 4.6.x || 4.7.x
   bin:
     typedoc: bin/typedoc
-  checksum: 3a2f492477989855fa43afc0ebfb84dca819436ec5c868ca175cb02485c6347c04dbb2d11669a8be04fc6860a8f3d29d124300b5718ba17174622ace29a0276a
+  checksum: a8c0aed855f588a2c008e5520e59e4a59d48d14cd483d0030fc3345bed3757aac8618659c59b4087c221aa2f7a7875b9f30c7a4a966e43ec969cd8905d6d8b67
   languageName: node
   linkType: hard
 
