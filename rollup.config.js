@@ -75,34 +75,25 @@ export default function Config(options) {
         },
         buildFormat('cjs') && {
           ...base.output,
-          file: pkg.main,
+          file: pkg.require,
           format: 'cjs',
         },
       ].filter(Boolean),
     },
-    ((buildFormat('umd') && pkg.browser) || (buildFormat('umd-min') && pkg.unpkg)) && {
-      ...base,
-      input: fs.existsSync(base.input.replace('.ts', '.umd.ts')) ? base.input.replace('.ts', '.umd.ts') : base.input,
-      output: [
-        buildFormat('umd') &&
-          pkg.browser && {
-            ...base.output,
-            file: pkg.browser,
-            format: 'umd',
-            name: pkg.global,
-          },
-        buildFormat('umd-min') &&
-          pkg.unpkg && {
-            ...base.output,
-            file: pkg.unpkg,
-            format: 'umd',
-            name: pkg.global,
-            plugins: [terser()],
-          },
-      ].filter(Boolean),
-      external: (v) => isPeerDependency(v),
-      plugins: [...base.plugins, babel({ presets: ['@babel/env'], babelHelpers: 'bundled' })],
-    },
+    buildFormat('umd-min') &&
+      pkg.unpkg && {
+        ...base,
+        input: fs.existsSync(base.input.replace('.ts', '.umd.ts')) ? base.input.replace('.ts', '.umd.ts') : base.input,
+        output: {
+          ...base.output,
+          file: pkg.unpkg,
+          format: 'umd',
+          name: pkg.global,
+          plugins: [terser()],
+        },
+        external: (v) => isPeerDependency(v),
+        plugins: [...base.plugins, babel({ presets: ['@babel/env'], babelHelpers: 'bundled' })],
+      },
     buildFormat('types') && {
       ...base,
       output: {

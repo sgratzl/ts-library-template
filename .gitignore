@@ -21,3 +21,4 @@ npm-debug.log*
 /.vscode/extensions.json
 /docs
 *.tsbuildinfo
+.eslintcache
