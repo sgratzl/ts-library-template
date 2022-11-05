@@ -13,7 +13,7 @@ const pkg = JSON.parse(fs.readFileSync('./package.json'));
 function resolveYear() {
   // Extract copyrights from the LICENSE.
   const license = fs.readFileSync('./LICENSE', 'utf-8').toString();
-  const matches = Array.from(license.matchAll(/\(c\) (\d+)/gm));
+  const matches = Array.from(license.matchAll(/\(c\) (\d+-\d+)/gm));
   if (!matches || matches.length === 0) {
     return 2021;
   }
@@ -51,9 +51,6 @@ export default function Config(options) {
     },
     external: (v) => isDependency(v) || isPeerDependency(v),
     plugins: [
-      typescript(),
-      resolve(),
-      commonjs(),
       replace({
         preventAssignment: true,
         values: {
@@ -62,25 +59,32 @@ export default function Config(options) {
           __VERSION__: JSON.stringify(pkg.version),
         },
       }),
+      typescript(),
+      resolve(),
+      commonjs(),
     ],
   };
   return [
-    (buildFormat('esm') || buildFormat('cjs')) && {
-      ...base,
-      output: [
-        buildFormat('esm') && {
+    buildFormat('esm') &&
+      pkg.module && {
+        ...base,
+        output: {
           ...base.output,
           file: pkg.module,
           format: 'esm',
         },
-        buildFormat('cjs') && {
+      },
+    buildFormat('cjs') &&
+      pkg.require && {
+        ...base,
+        output: {
           ...base.output,
           file: pkg.require,
           format: 'cjs',
         },
-      ].filter(Boolean),
-    },
-    buildFormat('umd-min') &&
+        external: (v) => (isDependency(v) || isPeerDependency(v)) && ['d3-'].every((di) => !v.includes(di)),
+      },
+    buildFormat('umd') &&
       pkg.unpkg && {
         ...base,
         input: fs.existsSync(base.input.replace('.ts', '.umd.ts')) ? base.input.replace('.ts', '.umd.ts') : base.input,

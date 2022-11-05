@@ -12,3 +12,4 @@
 /.vscode
 *.tsbuildinfo
 .eslintcache
+*.tgz

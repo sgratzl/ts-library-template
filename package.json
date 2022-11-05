@@ -22,8 +22,8 @@
   },
   "global": "TSLibrary",
   "dependencies": {
-    "@types/d3-array": "^3",
-    "d3-array": "^3"
+    "@types/d3-array": "^3.0.3",
+    "d3-array": "^3.2.0"
   },
   "browserslist": [
     "last 2 Chrome version",
@@ -41,10 +41,7 @@
     ".": {
       "import": "./build/index.js",
       "require": "./build/index.cjs",
-      "scripts": {
-        "development": "./build/index.umd.js",
-        "production": "./build/index.umd.min.js"
-      },
+      "scripts": "./build/index.umd.min.js",
       "types": "./build/index.d.ts"
     },
     "./.pnp.cjs": "./.pnp.cjs"
